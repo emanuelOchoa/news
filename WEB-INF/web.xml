@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+    <servlet>
+        <servlet-name>ErabiltzaileKontuakErakutsiServlet</servlet-name>
+        <servlet-class>com.leartik.iberriozabal.erabiltzaile_kontuak.ErabiltzaileKontuakErakutsiServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ErabiltzaileKontuakAdminServlet</servlet-name>
+        <servlet-class>com.leartik.iberriozabal.erabiltzaile_kontuak.ErabiltzaileKontuakAdminServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ErabiltzaileKontuBerriaServlet</servlet-name>
+        <servlet-class>com.leartik.iberriozabal.erabiltzaile_kontuak.ErabiltzaileKontuBerriaServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ErabiltzaileKontuaAldatuServlet</servlet-name>
+        <servlet-class>com.leartik.iberriozabal.erabiltzaile_kontuak.ErabiltzaileKontuaAldatuServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ErabiltzaileKontuaEzabatuServlet</servlet-name>
+        <servlet-class>com.leartik.iberriozabal.erabiltzaile_kontuak.ErabiltzaileKontuaEzabatuServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>ErabiltzaileKontuakAdminServlet</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ErabiltzaileKontuBerriaServlet</servlet-name>
+        <url-pattern>/erabiltzaile-kontu_berria/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ErabiltzaileKontuaAldatuServlet</servlet-name>
+        <url-pattern>/erabiltzaile-kontua_aldatu/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ErabiltzaileKontuaEzabatuServlet</servlet-name>
+        <url-pattern>/erabiltzaile-kontua_ezabatu/index.jsp</url-pattern>
+    </servlet-mapping>
+
+</web-app>
